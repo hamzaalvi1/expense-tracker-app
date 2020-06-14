@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: whitesmoke;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h2 {
+  color: #212121;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 9px
+}
+.balance {
+  text-align: left;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+  color: #212121;
+  font-family: "Lato";
+}
+.card-panel{
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  justify-content:space-between;
+  align-items: center;
+  background-color: white;
+  height: 130px;
+  padding: 20px;
+  box-shadow: 1px 1px 3px grey;
+}
+.income{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 200px;
 }
-
-.App-link {
-  color: #61dafb;
+.income h2{
+color:#00e676;
+font-family: "Lato";
+text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.income h3{
+  color: #212121;
+  margin: 3px 0px;
+  font-family: "Lato";
+  text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  .expense{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
   }
-}
+  .expense h2{
+    color:#c62828 ;
+    font-family: "Lato";
+    text-align: center;
+    }
+    .expense h3{
+      color: #212121;
+      margin: 3px 0px;
+      font-family: "Lato";
+      text-align: center;
+      }
+      .history{
+        text-align: left;
+        width: 500px;
+        margin: 20px;
+        padding: 10px;
+        color: #212121;
+        font-family: "Lato"; 
+      }
+      .history h3{
+        margin: 8px;
+      }
+      .history li{
+        margin: 20px;
+        background-color: white;
+        height: 50px;
+        padding: 20px;
+        list-style: none;
+        box-shadow: 1px 1px 3px grey;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .form h3{
+         text-align: left;
+        color: #212121;
+        width: 500px;
+         margin: 8px;
+        font-family: "Lato";  
+      }
+      .form label{
+        display: block;
+        font-size: 18px;
+        text-align: left;
+       color: #212121;
+       width: 500px;
+        margin: 8px;
+       font-family: "Lato";  
+     }
+     .form input{
+      display: block;
+      border: 1px solid lightgray;
+       width: 500px;
+      margin: 3px;
+      height: 40px;
+     font-family: "Lato";  
+   }
+   .form p{
+    display: block;
+    font-size: 18px;
+    text-align: left;
+   color: #212121;
+   width: 500px;
+    margin: 8px;
+   font-family: "Lato";  
+ }
+ .form button{
+  margin: 10px 0px;
+   width: 500px;
+   height: 40px;
+   background-color: #7c4dff;
+   color: white;
+   border: none;
+   font-family: "Lato";  
+  box-shadow: 1px 1px 1px grey;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+ }
