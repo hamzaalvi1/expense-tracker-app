@@ -16,7 +16,7 @@ body{
   color: #212121;
   text-align: center; 
   font-family: "Lato";
-  margin: 9px
+  margin: 9px;
 }
 .balance {
   text-align: left;
@@ -25,6 +25,8 @@ body{
   padding: 10px;
   color: #212121;
   font-family: "Lato";
+
+
 }
 .card-panel{
   display: flex;
@@ -94,6 +96,18 @@ text-align: center;
         display: flex;
         align-items: center;
         justify-content: space-between;
+      }
+      .history button{
+        background-color: transparent;
+        color: #7c4dff;
+        border: none;
+        padding:8px;
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .history button:hover{
+        background-color: #7c4dff;
+        color: white;
       }
       .form h3{
          text-align: left;

@@ -1,14 +1,21 @@
-import React from "react"
+import React, {useContext}from "react"
+import {TransactionContext} from "./Context/GlobalState"
+
 
 const History = () =>{
+    const transaction_Context = useContext(TransactionContext)
+    const {initState,transactionDispatch} = transaction_Context
     return(
         <div className = "history">
             <h3>History</h3>
             <hr/>
             <ul>
-              <li><span>Buy New Books</span> <span>-400</span></li>
-              <li><span>Sell Old Laptop</span> <span>+1200</span></li>  
-
+             {initState.map((transaction)=>{
+                 return(
+                 <li key= {transaction.id}><span>{transaction.text}</span><span>${transaction.amount}
+                  <button onClick = {()=> transactionDispatch({type:"DELETE-TRANSACTION",id:transaction.id}) }>X</button></span></li>
+                 )
+             })}
             </ul>
         </div>
     )
